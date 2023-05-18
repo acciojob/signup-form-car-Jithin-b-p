@@ -16,6 +16,7 @@
 			<label for="name">Name</label>
 			<input type="text" name="name" id="name" placeholder="Name" required>
 		</div>
+		<br>
 		<div>
 			<label for="email">Email</label>
 			<input type="email" name="email" id="email" placeholder="Email" requied>
@@ -25,33 +26,44 @@
 			<input type="radio" name="gender_m" id="gender_m">Male
 			<input type="radio" name="gender_f" id="gender_f">Female
 		</div>
+		<br>
 		<div>
 			<label for="carbrand">Car Brands</label>
-			<select placeholder="--Please choose an option--">
+			<select name="cars" required>
+				<option selected disabled hidden>--Please choose an option--</option>
 				<option name="cars" id="cars" required>BMW</option>
 				<option name="cars" id="cars" required>Audi</option>
 				<option name="cars" id="cars" required>Mercedez</option>
 			</select>
 		</div>
+		<br>
 		<div>
 			<label for="age">Age</label>
 			<input type="number" name="age" id="age" placeholder="Age" required>
 		</div>
+		<br>
 		<div>
 			<label>DOB</label>
 			<input type="date" name="dob" id="dob" required>
 		</div>
+		<br>
 		<div>
 			<label for="tel">Phone Number</label>
-			<input type="tel" name="tel" id="tel">
+			<input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxx">
 		</div>
+		<br>
 		<div>
 			<label for="pasword">Password</label>
 			<input type="password" name="password" id="password" placeholder="password" required>
 		</div>
+		<br>
 		<div>
-			<label for="checkbox">Checkbox</label>
-			<input type="checkbox"
+			<label for="tos">I agree to the TOS</label>
+			<input type="checkbox" name="tos" id="tos" required>
+		</div>
+		<br>
+		<div>
+			<input type="submit">
 		</div>
 	</form>
 
